@@ -1,8 +1,10 @@
 package com.zhl.pattern.abstractfactory;
 
-public class AFClient {
+import com.zhl.pattern.Client;
 
-	public static void run() {
+public class AFClient extends Client {
+
+	public void run() {
 		Factory factory = Factory.getFactory();
 		
 		ProductA a = factory.createProductA();
