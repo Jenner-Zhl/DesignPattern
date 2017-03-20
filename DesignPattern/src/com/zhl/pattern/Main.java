@@ -3,6 +3,7 @@ package com.zhl.pattern;
 import java.util.Scanner;
 
 import com.zhl.pattern.abstractfactory.AFClient;
+import com.zhl.pattern.builder.BuildClient;
 import com.zhl.pattern.factorymothod.FMClient;
 
 public class Main {
@@ -29,6 +30,8 @@ public class Main {
 		switch (i) {
 		case 1:
 			return new AFClient();
+		case 2:
+			return new BuildClient();
 		case 3:
 			return new FMClient();
 
@@ -39,6 +42,7 @@ public class Main {
 	private static final String usage =
 			"\n------\nPlease choose a number\n"
 			+ "1. Abstract Factory\n"
+			+ "2. Builder\n"
 			+ "3. Factory Method\n"
 			+ "0. exit";
 }
