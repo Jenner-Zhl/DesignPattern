@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.zhl.pattern.abstractfactory.AFClient;
 import com.zhl.pattern.builder.BuildClient;
 import com.zhl.pattern.factorymothod.FMClient;
+import com.zhl.pattern.prototype.prototypeClient;
 
 public class Main {
 
@@ -34,7 +35,9 @@ public class Main {
 			return new BuildClient();
 		case 3:
 			return new FMClient();
-
+		case 4:
+			return new prototypeClient();
+			
 		default: return null;
 		}
 	}
@@ -44,5 +47,6 @@ public class Main {
 			+ "1. Abstract Factory\n"
 			+ "2. Builder\n"
 			+ "3. Factory Method\n"
+			+ "4. ProtoType\n"
 			+ "0. exit";
 }
