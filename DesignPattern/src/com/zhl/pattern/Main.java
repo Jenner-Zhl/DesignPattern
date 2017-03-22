@@ -6,6 +6,7 @@ import com.zhl.pattern.abstractfactory.AFClient;
 import com.zhl.pattern.builder.BuildClient;
 import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.prototype.prototypeClient;
+import com.zhl.pattern.singleton.SingletonClient;
 
 public class Main {
 
@@ -37,6 +38,8 @@ public class Main {
 			return new FMClient();
 		case 4:
 			return new prototypeClient();
+		case 5:
+			return new SingletonClient();
 			
 		default: return null;
 		}
@@ -48,5 +51,6 @@ public class Main {
 			+ "2. Builder\n"
 			+ "3. Factory Method\n"
 			+ "4. ProtoType\n"
+			+ "5. Singleton\n"
 			+ "0. exit";
 }
