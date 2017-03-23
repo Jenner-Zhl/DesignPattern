@@ -3,6 +3,7 @@ package com.zhl.pattern;
 import java.util.Scanner;
 
 import com.zhl.pattern.abstractfactory.AFClient;
+import com.zhl.pattern.adapter.AdapterClient;
 import com.zhl.pattern.builder.BuildClient;
 import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.prototype.prototypeClient;
@@ -40,17 +41,21 @@ public class Main {
 			return new prototypeClient();
 		case 5:
 			return new SingletonClient();
+		case 6:
+			return new AdapterClient();
 			
 		default: return null;
 		}
 	}
 
 	private static final String usage =
-			"\n------\nPlease choose a number\n"
-			+ "1. Abstract Factory\n"
-			+ "2. Builder\n"
-			+ "3. Factory Method\n"
-			+ "4. ProtoType\n"
-			+ "5. Singleton\n"
+			"\n------\nPlease choose a number\t\t"
+			+ "1. Abstract Factory\t\t"
+			+ "2. Builder\t\t"
+			+ "3. Factory Method\t\t"
+			+ "4. ProtoType\t\t"
+			+ "5. Singleton\t\t"
+			+ "6. Adapter\t\t"
+			
 			+ "0. exit";
 }
