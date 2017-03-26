@@ -8,6 +8,7 @@ import com.zhl.pattern.adapter.bridge.BridgeClient;
 import com.zhl.pattern.builder.BuildClient;
 import com.zhl.pattern.composite.CompositeClient;
 import com.zhl.pattern.decorator.DecoratorClient;
+import com.zhl.pattern.facade.FacadeClient;
 import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.singleton.SingletonClient;
@@ -52,6 +53,8 @@ public class Main {
 			return new CompositeClient();
 		case 9:
 			return new DecoratorClient();
+		case 10:
+			return new FacadeClient();
 		default: return null;
 		}
 	}
@@ -67,6 +70,7 @@ public class Main {
 			+ "7. Brige\t\t"
 			+ "8. Composite\t\t"
 			+ "9. Decorator\n"
+			+ "10. Facade\t\t"
 			
 			+ "0. exit";
 }
