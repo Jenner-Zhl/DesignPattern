@@ -6,6 +6,7 @@ import com.zhl.pattern.abstractfactory.AFClient;
 import com.zhl.pattern.adapter.AdapterClient;
 import com.zhl.pattern.adapter.bridge.BridgeClient;
 import com.zhl.pattern.builder.BuildClient;
+import com.zhl.pattern.chainofresponsibility.ChainClient;
 import com.zhl.pattern.composite.CompositeClient;
 import com.zhl.pattern.decorator.DecoratorClient;
 import com.zhl.pattern.facade.FacadeClient;
@@ -61,6 +62,8 @@ public class Main {
 			return new FlyClient();
 		case 12:
 			return new ProxyClient();
+		case 13:
+			return new ChainClient();
 		default: return null;
 		}
 	}
@@ -79,6 +82,7 @@ public class Main {
 			+ "10. Facade\t\t"
 			+ "11. Flyweight\t\t"
 			+ "12. Proxy\t\t"
+			+ "13. Chain of Responsibility\n"
 			
 			+ "0. exit";
 }
