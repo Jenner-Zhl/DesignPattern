@@ -10,6 +10,7 @@ import com.zhl.pattern.composite.CompositeClient;
 import com.zhl.pattern.decorator.DecoratorClient;
 import com.zhl.pattern.facade.FacadeClient;
 import com.zhl.pattern.factorymothod.FMClient;
+import com.zhl.pattern.flyweight.FlyClient;
 import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.singleton.SingletonClient;
 
@@ -55,6 +56,8 @@ public class Main {
 			return new DecoratorClient();
 		case 10:
 			return new FacadeClient();
+		case 11:
+			return new FlyClient();
 		default: return null;
 		}
 	}
@@ -71,6 +74,7 @@ public class Main {
 			+ "8. Composite\t\t"
 			+ "9. Decorator\n"
 			+ "10. Facade\t\t"
+			+ "11. Flyweight\t\t"
 			
 			+ "0. exit";
 }
