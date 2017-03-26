@@ -12,6 +12,7 @@ import com.zhl.pattern.facade.FacadeClient;
 import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.flyweight.FlyClient;
 import com.zhl.pattern.prototype.prototypeClient;
+import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
 
 public class Main {
@@ -58,6 +59,8 @@ public class Main {
 			return new FacadeClient();
 		case 11:
 			return new FlyClient();
+		case 12:
+			return new ProxyClient();
 		default: return null;
 		}
 	}
@@ -75,6 +78,7 @@ public class Main {
 			+ "9. Decorator\n"
 			+ "10. Facade\t\t"
 			+ "11. Flyweight\t\t"
+			+ "12. Proxy\t\t"
 			
 			+ "0. exit";
 }
