@@ -14,6 +14,7 @@ import com.zhl.pattern.facade.FacadeClient;
 import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.flyweight.FlyClient;
 import com.zhl.pattern.mediator.MediatorClient;
+import com.zhl.pattern.memento.MementoClient;
 import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
@@ -70,6 +71,8 @@ public class Main {
 			return new CommandClient();
 		case 17:
 			return new MediatorClient();
+		case 18:
+			return new MementoClient();
 		default: return null;
 		}
 	}
@@ -93,6 +96,7 @@ public class Main {
 			+ "15. 解释器模式，没有编码，例如正则表达式\t\t"
 			+ "16. Iterator, 没有编码，参考java的Iterator\n"
 			+ "17. Mediator\t\t"
+			+ "18. Memento\t\t"
 			
 			+ "0. exit";
 }
