@@ -15,6 +15,7 @@ import com.zhl.pattern.factorymothod.FMClient;
 import com.zhl.pattern.flyweight.FlyClient;
 import com.zhl.pattern.mediator.MediatorClient;
 import com.zhl.pattern.memento.MementoClient;
+import com.zhl.pattern.observer.ObserverClient;
 import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
@@ -73,6 +74,8 @@ public class Main {
 			return new MediatorClient();
 		case 18:
 			return new MementoClient();
+		case 19:
+			return new ObserverClient();
 		default: return null;
 		}
 	}
@@ -97,6 +100,7 @@ public class Main {
 			+ "16. Iterator, 没有编码，参考java的Iterator\n"
 			+ "17. Mediator\t\t"
 			+ "18. Memento\t\t"
+			+ "19. Observer\t\t"
 			
 			+ "0. exit";
 }
