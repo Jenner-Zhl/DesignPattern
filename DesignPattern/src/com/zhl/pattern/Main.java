@@ -19,6 +19,7 @@ import com.zhl.pattern.observer.ObserverClient;
 import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
+import com.zhl.pattern.state.StateClient;
 
 public class Main {
 
@@ -76,6 +77,8 @@ public class Main {
 			return new MementoClient();
 		case 19:
 			return new ObserverClient();
+		case 20:
+			return new StateClient();
 		default: return null;
 		}
 	}
@@ -101,6 +104,7 @@ public class Main {
 			+ "17. Mediator\t\t"
 			+ "18. Memento\t\t"
 			+ "19. Observer\t\t"
+			+ "20. State\t\t"
 			
 			+ "0. exit";
 }
