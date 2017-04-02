@@ -21,6 +21,7 @@ import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
 import com.zhl.pattern.state.StateClient;
 import com.zhl.pattern.strategy.StrategyClient;
+import com.zhl.pattern.template.TemplateClient;
 
 public class Main {
 
@@ -82,6 +83,8 @@ public class Main {
 			return new StateClient();
 		case 21:
 			return new StrategyClient();
+		case 22:
+			return new TemplateClient();
 		default: return null;
 		}
 	}
@@ -109,6 +112,7 @@ public class Main {
 			+ "19. Observer\t\t"
 			+ "20. State\t\t"
 			+ "21. Strategy\n"
+			+ "22. Template Method\t\t"
 			
 			+ "0. exit";
 }
