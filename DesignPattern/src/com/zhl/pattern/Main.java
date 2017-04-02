@@ -20,6 +20,7 @@ import com.zhl.pattern.prototype.prototypeClient;
 import com.zhl.pattern.proxy.ProxyClient;
 import com.zhl.pattern.singleton.SingletonClient;
 import com.zhl.pattern.state.StateClient;
+import com.zhl.pattern.strategy.StrategyClient;
 
 public class Main {
 
@@ -79,6 +80,8 @@ public class Main {
 			return new ObserverClient();
 		case 20:
 			return new StateClient();
+		case 21:
+			return new StrategyClient();
 		default: return null;
 		}
 	}
@@ -105,6 +108,7 @@ public class Main {
 			+ "18. Memento\t\t"
 			+ "19. Observer\t\t"
 			+ "20. State\t\t"
+			+ "21. Strategy\n"
 			
 			+ "0. exit";
 }
